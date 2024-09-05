@@ -27,7 +27,7 @@ os.makedirs(session_dir, exist_ok=True)
 client = TelegramClient(os.path.join(session_dir, 'session'), api_id, api_hash)
 
 # Текст, який потрібно додати до кінця кожного повідомлення
-footer_text = "➡️ Підписатись @kievenergy"
+footer_text = ""
 
 # Функція для перевірки та пересилання повідомлень
 async def check_and_forward():
