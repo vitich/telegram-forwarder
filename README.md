@@ -23,9 +23,9 @@ Then enter the code from telegram and your password.<br />
 
 7) Next time you can start/stop the container <br />
 ```
-docker start telegram-forward
+docker start telegram-forwarder
 ```
 8) You can look in the log like this
 ```
-docker logs -f telegram-forward
+docker logs -f telegram-forwarder
 ```
