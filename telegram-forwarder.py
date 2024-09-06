@@ -19,15 +19,13 @@ public_channel_username = os.getenv('PUBLIC_CHANNEL_USERNAME')
 private_channel_id = int(os.getenv('PRIVATE_CHANNEL_ID'))  # Переконуємося, що це int
 session_dir = os.getenv('SESSION_DIR', './session')
 message_id_file = os.path.join(session_dir, 'message_id.txt')
+footer_text = "os.getenv('FOOTER_TEXT')"
 
 # Переконатися, що директорія для сесій існує
 os.makedirs(session_dir, exist_ok=True)
 
 # Ініціалізація клієнта Telegram
 client = TelegramClient(os.path.join(session_dir, 'session'), api_id, api_hash)
-
-# Текст, який потрібно додати до кінця кожного повідомлення
-footer_text = ""
 
 # Функція для перевірки та пересилання повідомлень
 async def check_and_forward():
