@@ -1,5 +1,5 @@
 # telegram-forwarder
-The script checks the last message on the public channel every 10 seconds and forwards the last message to the private channel or group.
+The script checks the last message on the public channel every 10 seconds and forwards it to the private channel or group.
 
 1) Download this repo.<br />
 ```
